@@ -13,7 +13,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     line-height: 17px;
-    font-weight: 400;
+    font-weight: 300, 400, 700;
     color: var(--black);
     margin: 0 auto;
 }
@@ -64,7 +64,6 @@ body {
     fill: var(--bright);
 }
 
-
 .header__list {
     display: flex;
     
@@ -86,7 +85,7 @@ body {
 }
 
 .header__link {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 34px;
     fill:#F8F8F8;
 }
 
@@ -95,162 +94,154 @@ body {
     fill: var(--bright);
 }
 
-.holder {
-    display: flex;
-    margin: 0 0 64px 0;
+.registration {
     background-color: var(--light-pink);
+    min-height:140px;
+    margin: 0 auto;
+    width:100%;
 }
 
-.holder__text-wrp {
-    flex-grow: 1;
-    padding: 0 0 0 92px;
-    display: flex;
-    align-items: center;
-}
-
-.holder__text {
-    font-family: 'Lato';
-    font-style: bold;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 58px;
-    text-transform: uppercase;
-}
-
-.holder__subtext {
-    display: block;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38px;
-}
-
-.holder__subtext-pink {
-    color: var(--dark-pink);
-}
-
-.sales__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.sales__item {
-    padding: 105px 20px 20px 20px;
-    box-sizing: border-box;
-    width: 360px;
-    min-height: 260px;
-    background-color: var(--sales-bkg-color);
-    text-align: center;
-    list-style-type: none;
-}
-
-.sales__item--woman {
-    background-image: url(img/sales_woman.jpg);
-}
-
-.sales__item--man {
-    background-image: url(img/sales_man.jpg);
-}
-
-.sales__item--kid {
-    background-image: url(img/sales_kid.jpg);
-}
-
-.sales__item--shoes {
-    width: 100%;
-    background-image: url(img/sales_accesories.jpg);
-    margin: 30px 0 0 0;
-}
-
-.sales__item-title {
-    text-transform: uppercase;
+.registration__title {
     font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    padding: 60px 0 0 0;
+    color: var(--dark-pink);
+    margin: 0 auto;
+}
+
+.registration__legend {
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: var(--text-color);
-    list-style-type: none;
-    
 }
 
-.sales__item-minititle {
-    text-transform: uppercase;
-    font-style: bold;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 19px;
-    color: var(--dark-pink);
-    text-align: center;
-    
-}
-
-.catalog {
-    padding: 100px 0 0 0;
-}
-
-.catalog__description {
-    text-align: center;
-}
-
-.catalog__title {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-}
-
-.catalog__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: var(--description-color)
-}
-
-.catalog__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px 0;
-}
-
-.catalog__item {
+.registration__input {
     width: 360px;
-    margin: 0 0 30px 0;
-    padding: 0 0 57px 0;
-    background-color: var(--card-bkg);
-    text-align: left;
-    list-style-type: none;
 }
 
-.catalog__item-img {
-    padding: 0 0 25px 0;
-}
-
-.catalog__item-title {
-    text-transform: uppercase;
-    font-weight: 400;
+input[type="text"], input[type="password"], input[type="email"]  {
+    width:359px;
+    height:44px;
+    border: 1px solid #A4A4A4;
+    font-weight: 300;
     font-size: 13px;
     line-height: 16px;
-    padding: 0 0 0 17px;
+    color: black;
+    margin: 20px 0 0 0;
 }
 
-.catalog__item-text {
-    margin: 13px 0 0 0;
+input[type="email"]::placeholder {
     font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: var(--description-color);
-    padding: 0 28px 0 17px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
 }
 
-.catalog__button {
-    border: 1px solid var(--bright);
-    padding: 14px 38px;
-    background-color: white;
-    margin: 0 auto;
-    display: block;
-}   
+input[type="text"]::placeholder {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
 
-.catalog__button-text {
-    color: var(--bright);
+input[type="password"]::placeholder {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+input[type="email"]:hover,
+input[type="email"]:focus,
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="password"]:hover,
+input[type="password"]:focus {
+    border-color: var(--bright);
+}
+
+.registration__radio {
+    margin: 20px 0 0 0;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.radio-label:focus,
+.radio-label:active {
+    color: var(--dark-pink);
+}
+fieldset {
+    border: none;
+    margin:64px 0 0 0;
+}
+
+.registration__input-info {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.registration_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration__info {
+    margin: 64px 0 0 128px;
+}
+
+.registration__info-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.registration__info-text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 21px 0;
+}
+
+.registration__info-list {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.registration__info-item {
+    list-style-type: none;
+    margin: 16px 0;
+    position: relative;
+}
+
+.registration__info-item:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: none;
+    position: absolute;
+    top: 5px;
+    left: -35px;
+    background-image: url(img/mark.svg);
+    background-size: 20px 20px;
+}
+
+button[type="submit"] {
+    display: block;
+    border: none;
+    padding: 17px 38px;
+    background-color: var(--dark-pink);
+    margin: 39px 0 96px 10px;
+    width: 167px;
+    text-align: left;
+    text-transform: uppercase;
+    color:#FFFFFF;
 }
 
 .aside {
@@ -266,7 +257,6 @@ body {
 
 .aside__item {
     padding: 103px 0;
-    list-style-type: none;
 }
 
 .aside__item-title {
@@ -336,7 +326,7 @@ body {
     box-sizing: border-box;
     background: #E1E1E1;
     padding: 10px;
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px;
     border: none;
     font-weight: 400;
     font-size: 14px;
@@ -355,6 +345,7 @@ body {
     border-radius: 0 20px 20px 0;
     border: none;
     margin: 0 33px 0 -33px;
+    height: 44px;
 }
 
 .promo__button:hover,
