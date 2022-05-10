@@ -1,0 +1,48 @@
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sales__item {
+    padding: 105px 20px 20px 20px;
+    box-sizing: border-box;
+    width: 360px;
+    min-height: 260px;
+    background-color: $sales-bkg-color;
+    text-align: center;
+    list-style-type: none;
+}
+
+.sales__item--woman {
+    background-image: url(../img/sales_woman.jpg);
+}
+
+.sales__item--man {
+    background-image: url(../img/sales_man.jpg);
+}
+
+.sales__item--kid {
+    background-image: url(../img/sales_kid.jpg);
+}
+
+.sales__item--shoes {
+    width: 100%;
+    background-image: url(../img/sales_accesories.jpg);
+    margin: 30px 0 0 0;
+}
+
+.sales__item-title {
+    text-transform: uppercase;
+    @include font(16px, 19px, 400);
+    color: $text-color;
+    list-style-type: none;
+    
+}
+
+.sales__item-minititle {
+    text-transform: uppercase;
+    @include font(24px, 19px, 700, bold);
+    color: $dark-pink;
+    text-align: center;
+}
