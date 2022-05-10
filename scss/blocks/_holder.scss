@@ -1,0 +1,28 @@
+.holder {
+    display: flex;
+    margin: 0 0 64px 0;
+    background-color: $light-pink;
+    
+    .holder__text-wrp {
+        flex-grow: 1;
+        padding: 0 0 0 92px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .holder__text {
+        @include font (48px, 58px, 900, bold);
+        text-transform: uppercase;
+    }
+    
+    .holder__subtext {
+        display: block;
+        @include font(32px, 38px, 700);
+    }
+    
+    .holder__subtext-pink {
+        color: $dark-pink;
+    }
+    
+}
+

@@ -1,0 +1,15 @@
+@import './_variables.scss';
+@import './mixins';
+@import './_reset.scss';
+@import './_general.scss';
+
+@import './blocks/_header';
+
+@import './blocks/_nav-sub-item';
+@import './blocks/_holder';
+@import './blocks/sales';
+@import './blocks/catalog';
+@import './blocks/aside';
+@import './blocks/promo';
+@import './blocks/_cart';
+@import './blocks/footer';

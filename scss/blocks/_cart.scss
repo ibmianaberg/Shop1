@@ -1,0 +1,47 @@
+.cart-wrapper-overlay {
+    position: relative;
+}
+
+.cart-wrapper-overlay:before {
+    content:'';
+    background: rgba(0, 0, 0, 0.4);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+}
+
+.cart_button {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 13px 13px 13px 50px;
+    background-color:transparent;
+    border-color:white;
+    border: 1px solid;
+    @include font(14px, 17px, 400);
+    color: #FFFFFF;
+}
+
+.cart-overlay {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-110%,-50%);
+    padding: 13px 13px 13px 50px;
+    height:20px;
+}
+
+.cart-wrapper-overlay:before,
+.cart_button,
+.cart-overlay {
+    display: none;
+}
+
+.cart:hover .cart-wrapper-overlay:before, 
+.cart:hover .cart_button,
+.cart:hover .cart-overlay{
+    display: block;
+}

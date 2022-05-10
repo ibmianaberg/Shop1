@@ -1,0 +1,31 @@
+.footer {
+    background-color: $black;
+}
+
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__text {
+    display: block;
+    color:#E1E1E1;
+    @include font(16px, 19px, 400);
+    padding: 30px 0 0 0;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: right;
+}
+
+.footer__item {
+    padding: 30px 7px;
+    list-style-type: none;
+}
+
+.footer__item-img:hover,
+.footer__item-img:focus {
+    outline: 2px solid;
+    outline-color: #FF6A6A;
+}

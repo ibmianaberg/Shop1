@@ -1,0 +1,70 @@
+.promo {
+    display: flex;
+    background-image: url(../img/bkg-promo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 448px;
+    width: 100%;
+
+}
+
+.promo__review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 90px 0 0 0;
+}
+
+.promo__title {
+    @include font(20px, 24px, 400);
+    padding: 32px 0 0 0;
+    box-sizing: border-box;
+    width: 360px;
+}
+
+.promo__title-text {
+    font-style:italic;
+}
+
+.promo__text {
+    @include font(20px, 30px, 400);
+}
+
+.promo__text-text {
+    font-weight: 700;
+    
+}
+
+.promo__field {
+    margin: 30px 0 0 0;
+
+}
+
+.promo__form {
+    display: inline-block;
+    box-sizing: border-box;
+    background: #E1E1E1;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    @include font(14px, 17px, 400);
+    width: 300px;
+}
+
+.promo__button {
+    display: inline-block;
+    background-color: $dark-pink;
+    color:#FFFFFF;
+    @include font(14px, 17px, 400);
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    border: none;
+    margin: 0 33px 0 -33px;
+}
+
+.promo__button:hover,
+.promo__button:focus {
+    background-color: $bright;
+    cursor: pointer;
+}
